@@ -1,0 +1,134 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  position: relative;
+  max-height: 100vh;
+  background: #fff;
+
+  th {
+    font-weight: 400;
+  }
+}
+
+.table-wrapper {
+  max-height: calc(100vh - 80px);
+  overflow: scroll;
+  border: 1px solid rgba(224, 229, 235, 1);
+  border-radius: 12px;
+}
+
+.table thead {
+  background: rgba(240, 243, 247, 1);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: rgb(105, 113, 128);
+  text-align: start;
+  position: sticky;
+  top: 0;
+}
+
+.table thead td:nth-child(1) {
+  width: 48px;
+  text-align: center;
+}
+
+.table thead td:nth-child(2) {
+  width: 120px;
+}
+.table thead td:nth-child(3) {
+  width: 160px;
+}
+.table thead td:nth-child(4) {
+  width: 128px;
+}
+.table thead td:nth-child(5) {
+  width: 160px;
+}
+.table thead td:nth-child(6) {
+  width: 430px;
+}
+.table thead td:nth-child(7) {
+  width: 376px;
+}
+
+.table thead td {
+  padding: 8px 12px;
+}
+
+.table tbody td {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid rgb(224, 229, 235);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(255, 255, 255);
+
+  &:hover {
+    background: rgb(247, 248, 249);
+
+    .delete-btn {
+      opacity: 1;
+    }
+  }
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.water-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: rgb(94, 102, 116);
+}
+
+.delete-btn {
+  width: 40px;
+  height: 40px;
+  background: rgb(254, 227, 227);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  margin-left: auto;
+
+  &:hover {
+    background: rgb(254, 215, 215);
+  }
+
+  svg {
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover svg {
+    fill: rgb(155, 44, 44);
+  }
+
+  &:disabled {
+    background: transparent;
+  }
+
+  &:disabled svg {
+    fill: rgb(157, 166, 180);
+  }
+}
+
+.table-footer {
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid rgb(224, 229, 235);
+}

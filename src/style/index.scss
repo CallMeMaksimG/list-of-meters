@@ -1,0 +1,29 @@
+@import './reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --black: rgba(31, 41, 57, 1);
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: rgb(248, 249, 250);
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 16px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: rgba(31, 41, 57, 1);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
